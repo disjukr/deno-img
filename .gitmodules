@@ -1,0 +1,4 @@
+[submodule "deps/squoosh"]
+	path = deps/squoosh
+	url = https://github.com/GoogleChromeLabs/squoosh.git
+	shallow = true

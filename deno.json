@@ -1,0 +1,11 @@
+{
+  "tasks": {
+    "clean": "rm -rf ./generated",
+    "build:squoosh": "./scripts/build-squoosh.sh",
+    "build": "deno task build:squoosh"
+  },
+  "compilerOptions": {
+    "target": "esnext",
+    "lib": ["deno.ns", "dom"]
+  }
+}

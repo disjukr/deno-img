@@ -1,0 +1,12 @@
+diff --git a/codecs/cpp.Dockerfile b/codecs/cpp.Dockerfile
+index 037a56c..f296df7 100644
+--- a/codecs/cpp.Dockerfile
++++ b/codecs/cpp.Dockerfile
+@@ -1,6 +1,6 @@
+ FROM emscripten/emsdk:2.0.23
+ RUN apt-get update && apt-get install -qqy autoconf libtool pkg-config
+-ENV CFLAGS "-O3 -flto"
++ENV CFLAGS "-O0"
+ ENV CXXFLAGS "${CFLAGS} -std=c++17"
+ ENV LDFLAGS "${CFLAGS} \
+ -s FILESYSTEM=0 \

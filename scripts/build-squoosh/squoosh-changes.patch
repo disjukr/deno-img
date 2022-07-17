@@ -1,0 +1,14 @@
+diff --git a/codecs/webp/Makefile b/codecs/webp/Makefile
+index 29eba9a..87b45a0 100644
+--- a/codecs/webp/Makefile
++++ b/codecs/webp/Makefile
+@@ -24,7 +24,8 @@ $(OUT_JS):
+ 	$(LD) \
+ 		$(LDFLAGS) \
+ 		--bind \
+-		-s ENVIRONMENT=$(ENVIRONMENT) \
++		-s MODULARIZE=1 \
++		-s SINGLE_FILE=1 \
+ 		-s EXPORT_ES6=1 \
+ 		-o $@ \
+ 		$+
